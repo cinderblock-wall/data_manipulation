@@ -48,6 +48,8 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
+console.log('=========Part 1=========')
+
 console.log(n1 % 5===0)
 console.log(n2 % 5===0)
 console.log(n3 % 5===0)
@@ -67,4 +69,43 @@ console.log(((n2 - n1)*n3)%n4)
 
 const isUnder25 = n1 <= 25 || n2 <= 25 || n3 < 25 || n4 < 25;
 console.log(isUnder25)
+
+console.log('=========Part 2=========')
+
+const totalDistance = 1500;
+const budget = 175
+const fuelCost = 3
+
+const mph1 = 55
+const mph2 = 60
+const mph3 = 75
+
+const mph1Fuel = 30
+const mph2Fuel = 28
+const mph3Fuel =23
+
+//How many gallons of fuel will you need for the entire trip?
+
+console.log('How many gallons of fuel')
+console.log(totalDistance/mph1Fuel)
+console.log(totalDistance/mph2Fuel)
+console.log(totalDistance/mph3Fuel)
+
+//Will your budget be enough to cover the fuel expense?
+
+console.log('Will budget cover the cost of fuel')
+console.log(((totalDistance/mph1Fuel)*fuelCost)<budget)
+console.log(((totalDistance/mph2Fuel)*fuelCost)<budget)
+console.log(((totalDistance/mph3Fuel)*fuelCost)<budget)
+
+
+//How long will the trip take, in hours?
+
+console.log('Trip duration in hours')
+console.log(totalDistance/mph1)
+console.log(totalDistance/mph2)
+console.log(totalDistance/mph3)
+
+
+
 
